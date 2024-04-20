@@ -1,0 +1,32 @@
+\documentclass[12pt,openany]{book}      % paper size is in preamble.sty
+
+%\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+
+%%% META %%% 
+\newcommand{\authorname}{Book Author}
+\newcommand{\booktitle}{Your Book’s Title}
+\newcommand{\subtitle}{Your Book’s Subtitle}
+\newcommand{\publisher}{}
+\newcommand{\editionyear}{}
+\newcommand{\isbn}{}
+
+\title{\booktitle}
+\author{\authorname}
+
+\usepackage{./styling}
+
+\begin{document}
+\input{titlepage}
+%\input{copyrightpage}
+%\input{preface}
+
+% table of contents
+\tableofcontents\thispagestyle{empty}\cleardoublepage
+
+\mainmatter
+\pagestyle{fancy}
+
+\input{content/chapter1}
+
+\end{document}
